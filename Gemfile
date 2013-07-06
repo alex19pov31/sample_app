@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.13'
 gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
+gem 'i18n'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -27,6 +28,8 @@ group :test do
   gem 'rb-inotify', '~> 0.9'
   gem 'libnotify', '0.5.9'
   gem 'factory_girl', '4.1.0'
+  gem 'cucumber-rails', '1.2.1', :require => false
+  gem 'database_cleaner', '0.7.0'
 end
 
 

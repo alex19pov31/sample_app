@@ -1,0 +1,22 @@
+<% provide(:title, t('.title')) %>
+<h1><%= t '.title'%></h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(:session, url: sessions_path) do |f| %>
+
+      <%= f.label t 'activerecord.attributes.user.email' %>
+      <%= f.text_field :email %>
+
+      <%= f.label t 'activerecord.attributes.user.password' %>
+      <%= f.password_field :password %>
+
+      <%= f.submit t('.signin'), class: "btn btn-large btn-primary" %>
+    <% end %>
+	
+	<%= form_tag("session_path") do %>
+
+	<% end %>
+    <p><%= t'.newuser' %> <%= link_to t('.signup'), signup_path %></p>
+  </div>
+</div>

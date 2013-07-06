@@ -1,0 +1,74 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ru:
+  title: "Учебник по рельсам демка"
+  header:
+    home: "Главная"
+    help: "Помощь"
+    signin: "Войти"
+    profile: "Профиль"
+    users: "Пользователи"
+    settings: "Настройки"
+    signout: "Выйти"
+    title: "Демка"
+    account: "Аккаунт"
+  footer:
+    about: "О чем-то"
+    contact: "Контакты"
+    news: "Новости"
+  static_pages:
+    home:
+      title: "Демка"
+      welcome_html: 'Это главная страница
+      <a href="http://railstutorial.org/">руководства Ruby on Rails</a>
+      демо-приложение.'
+      signup: "Регистрация"
+    help:
+      title: "Помощь"
+      welcome_html: 'Get help on the Ruby on Rails Tutorial at the
+      <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
+      To get help on this sample app, see the
+      <a href="http://railstutorial.org/book">Rails Tutorial book</a>.'
+    contact:
+      title: "Контакты"
+      welcome_html: 'Contact Ruby on Rails Tutorial about the sample app at the
+    <a href="http://railstutorial.org/contact">contact page</a>.'
+    about:
+      title: "О нас"
+      welcome_html: 'The <a href="http://railstutorial.org/">Ruby on Rails Tutorial</a>
+      is a project to make a book and screencasts to teach web development
+      with <a href="http://rubyonrails.org/">Ruby on Rails</a>. This
+      is the sample application for the tutorial.'
+  sessions:
+    new:
+      title: "Авторизация"
+      signin: "Войти"
+      newuser: "Новый пользователь?"
+      signup: "Регистрация!"
+  activerecord:
+    attributes:
+      user:
+        password_confirmation: ""
+        name: "Имя пользователя"
+        password_digest: "Пароль"
+        password: "Пароль"
+        email: "Email"
+    errors:
+      models:
+        user:
+          attributes:
+            password_confirmation:
+              blank: "Пароли не совпадают"
+            password:
+              blank: "не может быть пустым"
+              too_short: "должен быть не менее 6 символов"
+              confirmation: "не подвержден"
+            email:
+              blank: "не может быть пустым"
+              invalid: "не верный адрес"
+              taken: "уже используется"
+            password_digest:
+              blank: "не создан"
+            name:
+              blank: "не может быть пустым"
