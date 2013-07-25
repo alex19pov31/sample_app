@@ -4,7 +4,7 @@
 end
 
 Если(/^он заполнит неверные данные авторизации$/) do
-  click_button "Sign in"
+  click_button I18n.t('sessions.new.signin')
 end
 
 Тогда(/^появиться сообщение о ошибке$/) do
@@ -17,9 +17,9 @@ end
 end
 
 Если(/^пользователь заполнит верные данные авторизации$/) do
-  fill_in "Email",    with: @user.email
-  fill_in "Password", with: @user.password
-  click_button "Sign in"
+  fill_in I18n.t('activerecord.attributes.user.email'),    with: @user.email
+  fill_in I18n.t('activerecord.attributes.user.password'), with: @user.password
+  click_button I18n.t('sessions.new.signin')
 end
 
 То(/^он автоматически попадет на страницу профиля$/) do
@@ -27,5 +27,5 @@ end
 end
 
 То(/^появится ссылка выхода$/) do
-  page.should have_link('Sign out', href: signout_path)
+  page.should have_link(I18n.t('header.signout'), href: signout_path)
 end

@@ -3,6 +3,11 @@
 
 ru:
   title: "Учебник по рельсам демка"
+  flash:
+    profile_updated: "Профиль успешно обновлён"
+    signin: "Авторизуйтесь"
+    auth: "Неверная комбинация email/пароль"
+    user_destroyed: "Пользователь удален"
   header:
     home: "Главная"
     help: "Помощь"
@@ -46,6 +51,21 @@ ru:
       signin: "Войти"
       newuser: "Новый пользователь?"
       signup: "Регистрация!"
+  users:
+    index:
+      title: "Список пользователей"
+      delete: "Удалить"
+      delete_message: "Вы уверены?"
+    new:
+      title: "Регистрация"
+      createaccount: "Создать аккаунт"
+      confirm: "Подтверждение пароля"
+    edit:
+      title: "Редактирование профиля"
+      welcome: "Обновите данные"
+      change: "Изменить"
+      confirm: "Подтверждение пароля"
+      save: "Сохранить"
   activerecord:
     attributes:
       user:
@@ -55,6 +75,8 @@ ru:
         password: "Пароль"
         email: "Email"
     errors:
+      messages:
+        record_invalid: "Не верное поле"
       models:
         user:
           attributes:
